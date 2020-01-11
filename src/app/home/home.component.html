@@ -1,0 +1,9 @@
+<div class="container" *ngIf ='movies'>
+    <div class="movie-list"  *ngFor='let item of movies'>
+        <div class="poster">
+           <img src= "https://image.tmdb.org/t/p/w300{{item.poster_path}}"> 
+        </div>
+        <a routerLink="/movie/{{item.id}}"> <h4>{{ item.title }}</h4> </a>
+
+    </div>
+</div>

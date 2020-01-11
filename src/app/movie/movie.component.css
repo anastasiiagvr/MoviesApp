@@ -1,0 +1,29 @@
+.container {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.poster, .info {
+    width: 100%;
+    margin: auto;
+}
+.poster img {
+    width: 100%;
+    height: auto;
+}
+@media screen and (min-width: 800px) {
+    .poster, .info {
+        width: 750px;
+    }
+}
+@media screen and (min-width: 1051px) {
+    .poster, .info {
+        width: 500px;
+    }
+}
+@media screen and (min-width: 1240px) {
+    .poster, .info {
+        width: 600px;
+    }
+}

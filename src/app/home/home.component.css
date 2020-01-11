@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.movie-list {
+    margin: auto;
+    padding: 10px;
+}
+.movie-list a {
+    text-decoration: none;
+    color: #000000;
+}
+.movie-list h4 {
+    background-color: #ffffff;
+    transition: background-color .5s, color 1s;
+    display: inline-block;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+.movie-list h4:hover {
+    color: #ffffff;
+    background-color: #1a83c4;
+}

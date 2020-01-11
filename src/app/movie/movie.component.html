@@ -1,0 +1,33 @@
+
+<div class="container" *ngIf="info">
+
+<div class="poster">
+    <img src="https://image.tmdb.org/t/p/w500{{ info.backdrop_path }}" alt="poster">
+</div>
+    
+<div class="info">
+    <h1>"{{info.title}}"</h1>
+    <div class="genres">
+        <h4>Genres:</h4> 
+        <span *ngFor = "let genre of info.genres">
+            {{ genre.name }}; 
+        </span>
+    </div>
+
+    <div class="production">
+        <h4>Production companies:</h4> 
+        <span *ngFor = "let company of info.production_companies">
+            {{ company.name }}; 
+        </span>
+    </div>
+
+    <div class="overview">
+        <h4>Overview:</h4>
+        <p>{{ info.overview }}</p>
+    </div>
+</div>
+
+</div>
+    <hr> 
+
+<app-similar></app-similar>

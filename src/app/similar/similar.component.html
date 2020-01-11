@@ -1,0 +1,14 @@
+<h3>Similar movies:</h3>
+
+<div class="container" *ngIf = "similar">
+    <div class="movies" *ngFor = "let item of similar">
+        <div class="title">
+            <!-- <a routerLink="/movie/{{item.id}}">  -->
+                <h4>{{ item.title }}</h4>
+            <!-- </a> -->
+        </div>
+        <div class="poster">
+            <img src="https://image.tmdb.org/t/p/w200{{item.poster_path}}" alt="">
+        </div>
+    </div>
+</div>
